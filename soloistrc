@@ -7,6 +7,11 @@ recipes:
 node_attributes:
   machine:
     name: mc_msainz_mbp15_i7
+  rbenv:
+    rubies:
+      1.9.3-p448: {}
+      1.9.3-p194: {}
+    default_ruby: 1.9.3-p448
   git_pairs_domain: modcloth.com
   git_pairs_authors:
     - initials: ms

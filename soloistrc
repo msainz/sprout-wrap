@@ -1,18 +1,21 @@
 recipes:
 - meta::osx_base
+- meta::osx_apps
 - meta::osx_development
-- meta::ruby_development
 - pivotal_workstation::git_projects
 node_attributes:
-  git_pairs_domain: pivotallabs.com
+  git_pairs_domain: modcloth.com
   git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
+    - initials: ms
+      name: Marcos Sainz
+      shortname: marcos
   git_projects:
     -
       - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+      - git://github.com/msainz/sprout-wrap
+    -
+      - sprout
+      - git://github.com/msainz/sprout
+    -
+      - julia
+      - git://github.com/JuliaLang/julia

@@ -2,8 +2,11 @@ recipes:
 - meta::osx_base
 - meta::osx_apps
 - meta::osx_development
+- meta::osx_settings
 - pivotal_workstation::git_projects
 node_attributes:
+  machine:
+    name: mc_msainz_mbp15_i7
   git_pairs_domain: modcloth.com
   git_pairs_authors:
     - initials: ms

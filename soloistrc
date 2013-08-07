@@ -19,11 +19,5 @@ node_attributes:
       shortname: marcos
   git_projects:
     -
-      - sprout-wrap
-      - git://github.com/msainz/sprout-wrap
-    -
-      - sprout
-      - git://github.com/msainz/sprout
-    -
       - julia
-      - git://github.com/JuliaLang/julia
+      - https://github.com/JuliaLang/julia

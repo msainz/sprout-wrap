@@ -36,6 +36,7 @@ include_recipe "pivotal_workstation::rbenv"
 include_recipe "meta::julia_studio"
 include_recipe "meta::r"
 include_recipe "meta::rstudio"
+include_recipe "meta::python"
 
 # databases
 include_recipe "pivotal_workstation::redis"

@@ -40,8 +40,7 @@ include_recipe "meta::python"
 
 # databases
 include_recipe "pivotal_workstation::redis"
-# mysql
-# postgres
-
+include_recipe "pivotal_workstation::mysql"
+include_recipe "pivotal_workstation::postgres"
 
 

@@ -7,6 +7,22 @@ recipes:
 node_attributes:
   machine:
     name: mc_msainz_mbp15_i7
+  bash_it:
+    enabled_plugins:
+      aliases:
+        - general
+        - osx
+        - git
+      completion:
+        - defaults
+        - rake
+        - git
+        - ssh
+      plugins:
+        - osx
+        - rbenv
+        - ssh
+        - virtualenv
   rbenv:
     rubies:
       1.9.3-p448: {}
@@ -21,3 +37,7 @@ node_attributes:
     -
       - julia
       - https://github.com/JuliaLang/julia
+    -
+      - julia-vim
+      - https://github.com/JuliaLang/julia-vim
+      - .vim/bundle

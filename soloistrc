@@ -11,6 +11,7 @@ node_attributes:
     enabled_plugins:
       aliases:
         - general
+        - bundler
         - osx
         - git
       completion:

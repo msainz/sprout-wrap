@@ -6,7 +6,7 @@ recipes:
 - pivotal_workstation::git_projects
 node_attributes:
   machine:
-    name: mc_msainz_mbp15_i7
+    name: mc-msainz-mbp15-i7
   bash_it:
     enabled_plugins:
       aliases:

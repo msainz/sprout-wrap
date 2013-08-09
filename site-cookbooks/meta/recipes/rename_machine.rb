@@ -5,7 +5,7 @@ name = (node['machine']['name'] rescue nil) || oldname
 if name != oldname
   log "Renaming machine #{oldname} -> #{name}"
   ["scutil --set ComputerName #{name}",
-   #"scutil --set LocalHostName #{name}",
+   "scutil --set LocalHostName #{name}",
    "scutil --set HostName #{name}",
    "hostname #{name}",
    "diskutil rename / #{name}" ].each do |host_cmd|

@@ -30,6 +30,7 @@ include_recipe "sprout-osx-apps::virtualbox"
 
 include_recipe "sprout-osx-apps::node_js"
 include_recipe "meta::jsontool"
+include_recipe "meta::smartdc"
 include_recipe "pivotal_workstation::rbenv"
 
 # data-science

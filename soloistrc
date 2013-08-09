@@ -6,7 +6,7 @@ recipes:
 - pivotal_workstation::git_projects
 node_attributes:
   machine:
-    name: mc-msainz-mbp15-i7
+    name: nibbler-dev-sfo
   bash_it:
     enabled_plugins:
       aliases:
@@ -32,10 +32,19 @@ node_attributes:
   mysql_root_password: password
   git_pairs_domain: modcloth.com
   git_pairs_authors:
+    - initials: am
+      name: Aiyesha Ma
+      shortname: aiyesha
     - initials: ms
       name: Marcos Sainz
       shortname: marcos
+    - initials: db
+      name: Dan Buch
+      shortname: dan
   git_projects:
+    -
+      - sprout
+      - git@github.com:msainz/sprout.git
     -
       - julia
       - https://github.com/JuliaLang/julia
@@ -43,3 +52,19 @@ node_attributes:
       - julia-vim
       - https://github.com/JuliaLang/julia-vim
       - .vim/bundle
+    -
+      - datasci-simit
+      - git@github.com:modcloth/datasci-simit.git
+    -
+      - datasci-simit-cookbook
+      - git@github.com:modcloth/datasci-simit-cookbook.git
+    -
+      - datasci-poptarts
+      - git@github.com:modcloth/datasci-poptarts.git
+    -
+      - datasci-poptarts-cookbook
+      - git@github.com:modcloth/datasci-poptarts-cookbook.git
+    -
+      - mc-intelligence
+      - git@github.com:modcloth/mc-intelligence.git
+

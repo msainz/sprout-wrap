@@ -70,4 +70,7 @@ node_attributes:
     -
       - mc-intelligence
       - git@github.com:modcloth/mc-intelligence.git
+    -
+      - chef-repo
+      - git@github.com:modcloth/chef-repo.git
 

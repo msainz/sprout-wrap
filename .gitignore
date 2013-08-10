@@ -1,2 +1,3 @@
 tmp/
 cookbooks/
+.private_data_bags_key

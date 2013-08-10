@@ -1,0 +1,8 @@
+alias sw='cd ~/workspace/sprout-wrap'
+alias sprout='cd ~/workspace/sprout'
+alias chefrepo='cd ~/workspace/chef-repo'
+alias mci='cd ~/workspace/mc-intelligence'
+alias poptarts='cd ~/workspace/datasci-poptarts'
+alias poptartsc='cd ~/workspace/datasci-poptarts-cookbook'
+alias simit='cd ~/workspace/datasci-simit'
+alias simitc='cd ~/workspace/datasci-simit-cookbook'

@@ -1,6 +1,7 @@
 include_recipe "pivotal_workstation::java"
 include_recipe "meta::rename_machine"
 include_recipe "pivotal_workstation::bash_it"
+include_recipe "meta::create_custom_aliases"
 include_recipe "pivotal_workstation::create_var_chef_cache"
 include_recipe "pivotal_workstation::sshd_on"
 include_recipe "pivotal_workstation::screen_sharing_app"

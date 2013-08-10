@@ -1,9 +1,12 @@
+cookbook_paths:
+  - ./cookbooks
 recipes:
-- meta::osx_base
-- meta::osx_apps
-- meta::osx_development
-- meta::osx_settings
-- pivotal_workstation::git_projects
+  - meta::osx_base
+  - meta::osx_apps
+  - meta::osx_development
+  - meta::osx_settings
+  - pivotal_workstation::git_projects
+  - meta::public_data_bag_example
 node_attributes:
   machine:
     name: nibbler-dev-sfo

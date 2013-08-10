@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -x
+bundle exec soloist run_recipe meta::create_data_bags_symlink
+bundle exec soloist

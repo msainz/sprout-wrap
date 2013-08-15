@@ -38,10 +38,12 @@ include_recipe "meta::julia_studio"
 include_recipe "meta::r"
 include_recipe "meta::rstudio"
 include_recipe "meta::python"
+include_recipe "meta::lua"
 
 # databases
 include_recipe "pivotal_workstation::redis"
 include_recipe "pivotal_workstation::mysql"
+include_recipe "meta::create_mysql_users"
 include_recipe "pivotal_workstation::postgres"
 
 

@@ -11,6 +11,7 @@ node_attributes:
   machine:
     name: nibbler-dev-sfo
   bash_it:
+    theme: nibbler
     enabled_plugins:
       aliases:
         - general
@@ -32,7 +33,18 @@ node_attributes:
       1.9.3-p448: {}
       1.9.3-p194: {}
     default_ruby: 1.9.3-p448
+  python:
+    virtualenvs:
+      simit: python2.7
+      waffles: python2.7
+  lua:
+    rocks:
+      inspect:
+      busted:
   mysql_root_password: password
+  mysql:
+    users:
+      travis:
   git_pairs_domain: modcloth.com
   git_pairs_authors:
     - initials: am
@@ -67,6 +79,9 @@ node_attributes:
     -
       - datasci-poptarts-cookbook
       - git@github.com:modcloth/datasci-poptarts-cookbook.git
+    -
+      - datasci-continental
+      - git@github.com:modcloth/datasci-continental.git
     -
       - mc-intelligence
       - git@github.com:modcloth/mc-intelligence.git

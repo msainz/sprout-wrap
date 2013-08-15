@@ -1,17 +1,17 @@
 include_recipe "pivotal_workstation::bash_it"
 include_recipe "python::virtualenv"
 
-bash_it_path = "/Users/#{node['current_user']}/.bash_it"
-virtualenv_path = "/Users/#{node['current_user']}/.virtualenv"
+bash_it_path = "#{ENV['HOME']}/.bash_it"
+virtualenv_path = "#{ENV['HOME']}/.virtualenv"
 
 directory virtualenv_path do
   owner node['current_user']
   action :create
 end
 
-%w{default}.each do |env|
-  python_virtualenv "#{virtualenv_path}/#{env}" do
-    interpreter 'python2.7'
+node['python']['virtualenvs'].each do |env_name, interp|
+  python_virtualenv "#{virtualenv_path}/#{env_name}" do
+    interpreter interp
     owner node['current_user']
     action :create
   end

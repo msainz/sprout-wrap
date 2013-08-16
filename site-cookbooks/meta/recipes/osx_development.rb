@@ -1,4 +1,5 @@
 include_recipe "pivotal_workstation::bash_it"
+include_recipe "meta::create_custom_bash_it_themes"
 include_recipe "pivotal_workstation::workspace_directory"
 include_recipe "pivotal_workstation::homebrew"
 include_recipe "sprout-osx-settings::global_environment_variables"

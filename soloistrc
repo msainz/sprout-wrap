@@ -6,6 +6,7 @@ recipes:
   - meta::osx_development
   - meta::osx_settings
   - pivotal_workstation::git_projects
+  - meta::symlink_datasci_cookbooks
   - meta::public_data_bag_example
 node_attributes:
   machine:
@@ -88,4 +89,12 @@ node_attributes:
     -
       - chef-repo
       - git@github.com:modcloth/chef-repo.git
+    -
+      - chef-config-data-science
+      - git@github.com:modcloth/chef-config-data-science.git
+  data_science:
+    cookbooks:
+      - poptarts
+      - simit
+
 

@@ -10,7 +10,7 @@ recipes:
   - meta::public_data_bag_example
 node_attributes:
   machine:
-    name: nibbler-dev-sfo
+    name: mc-msainz-mbp15-i7
   bash_it:
     theme: nibbler
     enabled_plugins:

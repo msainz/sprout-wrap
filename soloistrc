@@ -6,11 +6,10 @@ recipes:
   - meta::osx_development
   - meta::osx_settings
   - pivotal_workstation::git_projects
-  - meta::symlink_datasci_cookbooks
   - meta::public_data_bag_example
 node_attributes:
   machine:
-    name: mc-msainz-mbp15-i7
+    name: gldr-msainz-laptop
   bash_it:
     theme: nibbler
     enabled_plugins:
@@ -36,8 +35,7 @@ node_attributes:
     default_ruby: 1.9.3-p448
   python:
     virtualenvs:
-      simit: python2.7
-      waffles: python2.7
+      default: python2.7
   lua:
     rocks:
       inspect:
@@ -46,55 +44,21 @@ node_attributes:
   mysql:
     users:
       travis:
-  git_pairs_domain: modcloth.com
+  git_pairs_domain: glassdoor.com
   git_pairs_authors:
-    - initials: am
-      name: Aiyesha Ma
-      shortname: aiyesha
     - initials: ms
       name: Marcos Sainz
       shortname: marcos
-    - initials: db
-      name: Dan Buch
-      shortname: dan
   git_projects:
     -
       - sprout
       - git@github.com:msainz/sprout.git
     -
       - julia
-      - https://github.com/JuliaLang/julia
+      - git@github.com:JuliaLang/julia.git
     -
       - julia-vim
-      - https://github.com/JuliaLang/julia-vim
+      - git@github.com:JuliaLang/julia-vim.git
       - .vim/bundle
-    -
-      - datasci-simit
-      - git@github.com:modcloth/datasci-simit.git
-    -
-      - datasci-simit-cookbook
-      - git@github.com:modcloth/datasci-simit-cookbook.git
-    -
-      - datasci-poptarts
-      - git@github.com:modcloth/datasci-poptarts.git
-    -
-      - datasci-poptarts-cookbook
-      - git@github.com:modcloth/datasci-poptarts-cookbook.git
-    -
-      - datasci-continental
-      - git@github.com:modcloth/datasci-continental.git
-    -
-      - mc-intelligence
-      - git@github.com:modcloth/mc-intelligence.git
-    -
-      - chef-repo
-      - git@github.com:modcloth/chef-repo.git
-    -
-      - chef-config-data-science
-      - git@github.com:modcloth/chef-config-data-science.git
-  data_science:
-    cookbooks:
-      - poptarts
-      - simit
 
 

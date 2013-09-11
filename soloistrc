@@ -6,6 +6,7 @@ recipes:
   - meta::osx_development
   - meta::osx_settings
   - pivotal_workstation::git_projects
+  - meta::gldr_specifics
   - meta::public_data_bag_example
 node_attributes:
   machine:

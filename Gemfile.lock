@@ -51,6 +51,7 @@ GEM
       systemu
       yajl-ruby
     plist (3.1.0)
+    rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     soloist (1.0.1)
@@ -68,6 +69,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   chef (= 11.4.0)
   plist
+  rake
   soloist

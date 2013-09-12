@@ -6,7 +6,7 @@ recipes:
   - meta::osx_development
   - meta::osx_settings
   - pivotal_workstation::git_projects
-  - meta::gldr_specifics
+  - meta::glassdoor_specifics
   - meta::public_data_bag_example
 node_attributes:
   machine:
@@ -61,5 +61,3 @@ node_attributes:
       - julia-vim
       - git@github.com:JuliaLang/julia-vim.git
       - .vim/bundle
-
-

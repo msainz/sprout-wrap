@@ -45,7 +45,7 @@ GIT
   remote: git://github.com/msainz/sprout
   path: sprout-osx-base
   ref: master
-  sha: bf1805dc2a4505a8ee5143da3b6ddb9003137e4e
+  sha: 81d1eb99f57f236b917db248d876ecabd3e0785b
   specs:
     sprout-osx-base (0.1.0)
 

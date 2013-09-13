@@ -12,18 +12,28 @@ Prepares a Mac running OS X Mountain Lion for Ruby development using [soloist](h
 
 ### 2. Install Command Line Tools
   
-  XCode > Preferences > Downloads
+  <code>XCode > Preferences > Downloads</code>
   
-### 3. Clone this project
+### 3. Generate rsa key pair for Github authentication
   
-    git clone https://github.com/pivotal-sprout/sprout-wrap.git
+    mkdir ~/.ssh
+    rsa-keygen -t rsa -b 2048 -C <valid email address> -f ~/.ssh/id_rsa
+  Add the <code>.pub </code> key to your Github: <code>Account settings > SSH Keys > Add SSH Key</code>
+  
+### 4. Clone this project
+  
+    git clone git@github.com:msainz/sprout-wrap.git
     cd sprout-wrap
   
-### 4. Install soloist & and other required gems
+### 5. Install soloist & and other required gems
 
     sudo gem install bundler
     bundle
 
-### 5. Run soloist
+### 6. Place .private_data_bags_key inside sprout-wrap
+
+  Necessary if you plan to use [encrypted data bags](http://ed.victavision.co.uk/blog/post/4-8-2012-chef-solo-encrypted-data-bags)
+
+### 7. Run mysoloist
   
-    bundle exec soloist
+    ./mysoloist

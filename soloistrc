@@ -46,10 +46,11 @@ node_attributes:
     users:
       travis:
   git_pairs_domain: glassdoor.com
+  git_pairs_prefix: marcos
   git_pairs_authors:
     - initials: ms
       name: Marcos Sainz
-      shortname: marcos
+      shortname: gldr-msainz-laptop
   git_projects:
     -
       - sprout

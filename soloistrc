@@ -10,7 +10,7 @@ recipes:
   - meta::public_data_bag_example
 node_attributes:
   machine:
-    name: gldr-msainz-laptop
+    name: gldr-msainz-desktop
   bash_it:
     theme: nibbler
     enabled_plugins:
@@ -46,10 +46,11 @@ node_attributes:
     users:
       travis:
   git_pairs_domain: glassdoor.com
+  git_pairs_prefix: marcos
   git_pairs_authors:
     - initials: ms
       name: Marcos Sainz
-      shortname: marcos
+      shortname: gldr-msainz-desktop
   git_projects:
     -
       - sprout

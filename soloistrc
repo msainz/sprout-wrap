@@ -60,5 +60,5 @@ node_attributes:
       - git@github.com:JuliaLang/julia.git
     -
       - julia-vim
-      - git@github.com:JuliaLang/julia-vim.git
+      - git@github.com:msainz/julia-vim.git
       - .vim/bundle

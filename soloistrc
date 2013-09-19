@@ -11,7 +11,10 @@ recipes:
 node_attributes:
   machine:
     name: gldr-msainz-laptop
+  versions:
+    bash_it: 3f56aa4ce4dd24b2ec0c752f95522059f10b3415
   bash_it:
+    repository: http://github.com/msainz/bash-it.git
     theme: nibbler
     enabled_plugins:
       aliases:
@@ -62,3 +65,7 @@ node_attributes:
       - julia-vim
       - git@github.com:msainz/julia-vim.git
       - .vim/bundle
+    -
+      - bash-it
+      - git@github.com:msainz/bash-it.git
+

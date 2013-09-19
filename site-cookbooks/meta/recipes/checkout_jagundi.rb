@@ -33,5 +33,8 @@ directory "#{jagundi_dir}/temp-upload" do
   mode 0755
 end
 
+# TODO: include bash_it recipe
+# TODO: create .bash_it_ignore file if property set
+# TODO: be able to checkout only a certain portion of the repo (use subversion provider)
 
 
